@@ -10,6 +10,7 @@ app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 
+
 def scale(payload):
     """Scales Payload"""
     LOG.info("Scaling Payload: \n %s",payload)
@@ -62,7 +63,7 @@ def predict():
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # Log the output prediction value
-    LOG.info('Prediction value: %s',prediction)
+    LOG.info('Prediction value: \n%s',prediction)
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":

@@ -1,0 +1,6 @@
+Error from server (AlreadyExists): deployments.apps "ml-micro" already exists
+NAME                        READY   STATUS    RESTARTS   AGE
+ml-micro-6f98fb6bb4-mhpvc   1/1     Running   0          3m29s
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+Handling connection for 8080
